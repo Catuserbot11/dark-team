@@ -3,8 +3,7 @@ services:
         build: .
         deploy:
             restart_policy:
-                max_attempts: 2
-        env_file: config.env
+                max_attempts: 2          
         environment:
           SESSION: $SESSION
           PMPERMIT_ENABLED: $PMPERMIT_ENABLED
